@@ -1,0 +1,76 @@
+.signup {
+  height: 100%;
+  background-color: #2cc4cb;
+  background-image: linear-gradient(135deg, #2cc4cb, #18c5a9);
+  &__inner {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  &__logo {
+    font-size: 44px;
+    text-align: center;
+    padding: 20px 0;
+    text-transform: uppercase;
+    a {
+      color: #ffffff;
+    }
+  }
+  &__reg-form {
+    padding: 15px 20px 20px 20px;
+    background-color: #fff;
+    .reg-form {
+      &__title {
+        margin-bottom: 25px;
+        margin-top: 20px;
+        text-align: center;
+      }
+      &__field {
+        margin-bottom: 1rem;
+        .ui-inputtext {
+          display: block;
+          width: 100%;
+          border-radius: 2px;
+          padding: 0.5rem 0.75rem;
+          font-size: 1rem;
+          line-height: 1.25;
+          color: #495057;
+          background-color: #fff;
+          background-image: none;
+          background-clip: padding-box;
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          transition: border-color ease-in-out 0.15s;
+          box-shadow: none;
+        }
+        .ui-button {
+          color: #fff;
+          display: block;
+          width: 100%;
+          font-weight: 400;
+          text-align: center;
+          white-space: nowrap;
+          user-select: none;
+          border: 1px solid transparent;
+          padding: 0.5rem 0.75rem;
+          font-size: 1rem;
+          line-height: 1.25;
+          background-color: #2cc4cb;
+          border-color: #2cc4cb;
+          &--small {
+            width: 46%;
+          }
+        }
+      }
+    }
+  }
+  &__signin {
+    padding: 15px;
+    background-color: #ebedee;
+    text-align: center;
+  }
+  &__copyright {
+    margin: 10px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+  }
+}

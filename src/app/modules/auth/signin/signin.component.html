@@ -1,0 +1,33 @@
+<div class="signin">
+  <div class="signin__inner">
+    <div class="signin__logo">
+      <a class="link" href="index.html">AdminCa</a>
+    </div>
+    <form class="signin__login-form login-form" (ngSubmit)="onSignin(f)" #f="ngForm">
+      <div class="login-form__img-placeholder">
+
+      </div>
+      <h3 class="login-form__title">Log in</h3>
+      <div class="login-form__field">
+        <input type="text" size="30" pInputText ngModel name="email">
+      </div>
+      <div class="login-form__field">
+        <input type="password" size="30" pInputText ngModel name="password">
+      </div>
+      <div class="login-form__field space-between">
+        <p-checkbox name="remember" value="Remember me" label="Remember me" ngModel inputId="ny"></p-checkbox>
+        <a href="#">Forgot password?</a>
+      </div>
+      <div class="login-form__field">
+        <button pButton type="submit" label="Login"></button>
+      </div>
+    </form>
+    <div class="signin__signup">
+      Not a member?
+      <a routerLink="/signup">Create accaunt</a>
+    </div>
+    <div class="signin__copyright">
+      AdminCa. Save your time. Choose the best © 2017
+    </div>
+  </div>
+</div>

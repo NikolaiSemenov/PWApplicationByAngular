@@ -1,0 +1,13 @@
+.site-page {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  &__content {
+    margin-left: 220px;
+    margin-top: 50px;
+  }
+  &__footer {
+    margin-left: 220px;
+  }
+}

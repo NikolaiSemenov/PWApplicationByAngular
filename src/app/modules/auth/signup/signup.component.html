@@ -1,0 +1,39 @@
+<div class="signup">
+  <div class="signup__inner">
+    <div class="signup__logo">
+      <a class="link" href="/">AdminCa</a>
+    </div>
+    <form class="signup__reg-form reg-form" (ngSubmit)="onSignup(f)" #f="ngForm">
+      <div class="reg-form__img-placeholder">
+
+      </div>
+      <h3 class="reg-form__title">Sign Up</h3>
+      <div class="reg-form__field space-between">
+        <input type="text" size="30" pInputText ngModel name="firstname" placeholder="First name" class="ui-button--small">
+        <input type="text" size="30" pInputText ngModel name="lastname" placeholder="Last name" class="ui-button--small">
+      </div>
+      <div class="reg-form__field">
+        <input type="text" size="30" pInputText ngModel name="email" placeholder="Email">
+      </div>
+      <div class="reg-form__field">
+        <input type="password" size="30" pInputText ngModel name="password" placeholder="Password">
+      </div>
+      <div class="reg-form__field">
+        <input type="password" size="30" pInputText ngModel name="confirm" placeholder="Confirm password">
+      </div>
+      <div class="reg-form__field">
+        <p-checkbox name="policy" value="I agree the terms and policy" label="I agree the terms and policy" inputId="ny"></p-checkbox>
+      </div>
+      <div class="reg-form__field">
+        <button pButton type="submit" class="" label="Sign up"></button>
+      </div>
+    </form>
+    <div class="signup__signin">
+      Already a member?
+      <a routerLink="/signin">Login here</a>
+    </div>
+    <div class="signup__copyright">
+      AdminCa. Save your time. Choose the best Â© 2017
+    </div>
+  </div>
+</div>
